@@ -1,0 +1,55 @@
+/* Login.css */
+
+body {
+  background-color: #f8f9fa; /* Light background for the login page */
+}
+
+.login-wrapper {
+  min-height: 100vh; /* Ensure the login page takes full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-header {
+  background-color: #007bff; /* Primary Bootstrap color */
+  color: white;
+  padding: 15px;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+.text-primary:hover {
+  text-decoration: underline;
+}
+
+.text-muted:hover {
+  text-decoration: underline;
+}

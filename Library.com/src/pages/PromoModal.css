@@ -1,0 +1,372 @@
+/* General styles for the page background when popup/modal is active */
+body.modal-active {
+  overflow: hidden;
+  filter: blur(2px);
+}
+
+/* Exit Popup Styling */
+.exit-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1000;
+}
+
+.exit-popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.exit-popup-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.exit-popup-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.exit-popup-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.exit-popup-content button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#subscribeBtn {
+  background-color: #007bff;
+  color: #fff;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+#subscribeBtn:hover {
+  background-color: #0056b3;
+}
+
+#closePopup {
+  background-color: #ccc;
+  color: #000;
+}
+
+#closePopup:hover {
+  background-color: #aaa;
+}
+
+/* Exit-Intent Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+ /*.modal-dialog {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.modal-header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
+}
+.modal-header .btn-close {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+.modal-body {
+  font-size: 1.1rem;
+  padding: 30px;
+  text-align: center;
+}
+.modal-content input,
+.modal-content button {
+  display: block;
+  /* margin: 10px auto; */
+} 
+
+ .modal-content input {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+} 
+
+.modal-content button {
+  /* padding: 10px 15px; */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content #subscribeBtn {
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.modal-content #subscribeBtn:hover {
+  background-color: #0056b3;
+}
+
+.modal-content #closePopup {
+  background-color: #ccc;
+  color: black;
+}
+
+.modal-content #closePopup:hover {
+  background-color: #aaa;
+}
+
+/* Show the popup/modal when active */
+.exit-popup.active,
+.modal.active {
+  display: flex;
+}
+
+
+
+/* Background gradient */
+body.bg-gradient {
+  background: linear-gradient(180deg, #f3f4f7, #d4e3e5);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Card animations */
+.card {
+    /* height: 700px; */
+    max-width: 90%;
+    width: 400px;
+    border-radius: 12px;
+  animation: fadeIn 1s ease-in-out;
+  border: 1px solid #1db954; /* Green border for library-themed design */
+  padding: 2rem 1.5rem; /* Reduce padding */
+
+}
+
+
+/* Adjust form spacing */
+.card h5 {
+  font-size: 1.2rem; /* Smaller heading size */
+  margin-bottom: 1rem; /* Reduced bottom margin */
+}
+.card img {
+  margin-bottom: 1rem; /* Adjust spacing below logo */
+}
+.form-label {
+  font-size: 0.9rem; /* Smaller labels */
+}
+
+/* Buttons */
+.btn-lg {
+  font-size: 1rem;
+  background-color: #2a7f7f; /* Library-themed green color */
+  color: #fff;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 0.75rem; /* Reduce spacing between buttons */
+  padding: 0.4rem 0.8rem; /* Reduce padding on smaller devices */
+
+}
+
+/* Button hover effect */
+.btn-lg.hover-green:hover {
+  background-color: #236767;
+  color: #fff;
+  transform: scale(1.05); /* Subtle grow effect */
+}
+
+/* Log In button hover */
+.btn-primary.hover-dark:hover {
+  background-color: #14532d;
+  color: #fff;
+  transform: scale(1.05); /* Slight enlargement */
+}
+
+/* Toggle password visibility */
+#togglePassword {
+  cursor: pointer;
+  transition: color 0.2s ease;
+  color: white;
+}
+
+#togglePassword:hover {
+  color: #1db954;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: bold;
+}
+
+a.hover-green:hover {
+  color:#184f4f;
+  text-decoration: underline;
+
+}
+p {
+  font-size: 0.9rem; /* Smaller text size for footer */
+  margin-top: 1rem; /* Reduce space above footer */
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Card fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* transform: translateY(-20px); */
+  }
+  to {
+    opacity: 1;
+    /* transform: translateY(0); */
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+}
+
+
+/* Headline styling */
+.modal-header h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+/* Modal styling */
+.modal-content {
+  background: linear-gradient(
+    135deg,
+    #4caf50,
+    #81c784
+  ); /* Attractive gradient */
+  color: white;
+
+  text-align: center;
+  /* border-radius: 10px; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+  /* Modal Footer */
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-top: 1px solid #ccc;
+  }
+
+  /* Buttons */
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+
+  .btn-primary {
+    background-color: #e63946;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-primary:hover {
+    background-color: #d62839;
+    transform: scale(1.05); /* Slight hover zoom */
+    box-shadow: 0 5px 15px rgba(230, 57, 70, 0.4);
+  }
+
+  /* Link inside Button */
+  .btn-primary a {
+    text-decoration: none;
+    color: white; /* White text */
+    font-size: 16px;
+  }
+
+  .btn-primary a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .modal-dialog {
+      margin: 10px;
+    }
+
+    .modal-title {
+      font-size: 18px;
+    }
+
+    .modal-body {
+      font-size: 14px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      font-size: 14px;
+    }
+  }
