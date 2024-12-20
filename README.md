@@ -18,5 +18,5 @@ A student library website designed to provide a peaceful, distraction-free envir
 ## Installation:
 1. Clone the repository:
    ```bash
-[   (https://github.com/pankj369/library.com.git)
-](https://github.com/pankj369/library.com.git)
+[  (https://github.com/pankj369/library.com.git)
+]
