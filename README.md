@@ -19,4 +19,4 @@ A student library website designed to provide a peaceful, distraction-free envir
 ## Installation:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/SuccessLibrary.git
+   (https://github.com/pankj369/library.com.git)
